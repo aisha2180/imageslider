@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+    overflow: hidden;
+}
+.slide1,.slide2,.slide3,.slide4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+img{
+    width: 120%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoomout 3s linear infinite;
+}
+@keyframes zoomout {
+    
+    100%{
+        width: 100%;
+    }
+}
+.text{
+width: 600px;
+position:absolute;
+top:200px;
+left:100px;
+color:white;
+
+
+}
+    
+
+
+.text h1{
+    margin-bottom: 50px;
+}
+.text p{
+font-size: 14px;
+line-height: 18px;
+margin-top: 80px;
+}
+.text span{
+    background: red;
+    height: 1px;
+    width: 150px;
+    position: absolute;
+}
+.slide1{
+    animation:pic1 12s linear infinite;
+}
+.slide2{
+    animation:pic2 12s linear infinite;
+}
+.slide3{
+    animation:pic3 12s linear infinite;
+}
+.slide4{
+    animation:pic4 12s linear infinite;
+}
+@keyframes pic1 {
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes pic2 {
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes pic3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes pic4 {
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
